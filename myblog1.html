@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+	<title>My Website</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		.button {
+			position: fixed;
+			top: 10px;
+			left: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 18px;
+			cursor: pointer;
+		}
+		.button span {
+			width: 18px;
+			height: 2px;
+			background-color: black;
+		}
+		.menu {
+			position: fixed;
+			top: 0;
+			left: -300px;
+			width: 300px;
+			height: 100%;
+			background-color: #f2f2f2;
+			transition: left 0.3s ease-in-out;
+		}
+		.menu ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.menu li {
+			padding: 20px;
+			border-bottom: 1px solid #ccc;
+			cursor: pointer;
+		}
+		.menu li:hover {
+			background-color: #ccc;
+		}
+		.content {
+			margin-top: 50px;
+			padding: 20px;
+            position :relative;
+            width: 1100px;
+			text-align: center;
+            left: 18%;
+		}
+		.googleads
+		{
+			position: fixed;
+            bottom: 0%;
+            height: 12.43%;
+            width: 34.6%;
+		}
+	</style>
+</head>
+<body>
+	<div class="button" onclick="openMenu()">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="menu" id="menu">
+		<ul>
+			<li onclick="showHome()">Home</li>
+			<li onclick="showAbout()">About us</li>
+			<li onclick="showContact()">Contact us</li>
+		</ul>
+	</div>
+	<div class="content" id="content">
+		<h1>Dropshipping vs Affiliate Marketing</h1><br><br><h3>Dropshipping and affiliate marketing are two popular online business models that have gained a lot of attention in recent years. While both are based on the concept of selling products online, they differ in many ways. In this article, we will discuss the differences between dropshipping and affiliate marketing, their pros and cons, and which one is right for you.<br><br> Dropshipping is a retail fulfillment method where a store doesn't keep the products it sells in stock. Instead, when a store sells a product, it purchases the item from a third party and has it shipped directly to the customer. Dropshipping is an appealing option for entrepreneurs because it doesn't require the initial investment of buying inventory or the costs of warehousing and shipping. In short, the dropshipper acts as a middleman between the customer and the supplier. <br><br> On the other hand, affiliate marketing is a process in which an affiliate earns a commission for marketing another company's products. The affiliate searches for a product they like, then promotes that product and earns a piece of the profit from each sale they make. Unlike dropshipping, the affiliate does not handle the product directly, nor do they own the product. They simply promote the product through an affiliate link.<br><br> One of the main advantages of dropshipping is that it requires a relatively low initial investment. Since there is no inventory to purchase upfront, the entrepreneur can focus on marketing the products and building the business. This makes it an appealing option for those who want to start a business but don't have a lot of capital to invest.<br><br> Another advantage of dropshipping is the flexibility it provides. Since the entrepreneur doesn't own the inventory, they can easily change the products they sell without having to worry about clearing out existing inventory. This allows for greater agility and responsiveness to market trends.<br><br> However, dropshipping also has some drawbacks. One of the biggest challenges is finding reliable suppliers and managing the logistics of shipping products to customers. In addition, since the entrepreneur is not in control of the shipping process, there can be delays and issues that arise that are beyond their control.<br><br> Affiliate marketing, on the other hand, has a low barrier to entry and requires no initial investment. This makes it an appealing option for those who are just starting out or those who want to supplement their income.<br><br> Another advantage of affiliate marketing is the flexibility it provides. Affiliates can promote a wide range of products, from physical goods to digital products and services. This allows for greater diversity in the products that can be promoted.<br><br> However, there are also some disadvantages to affiliate marketing. One of the biggest challenges is the lack of control over the product being promoted. Since the affiliate does not own the product, they have no control over the quality, price, or availability of the product. In addition, the commission rates for affiliate marketing can be relatively low, which can limit the potential for earning significant income.<br><br> So, which one is better? The answer depends on your personal preferences, skills, and business goals. Dropshipping can be a good option if you are looking for a flexible business with low overhead costs. It allows for greater control over the products being sold and can be more profitable in the long run.<br><br> Affiliate marketing, on the other hand, can be a good option if you are looking for a low-risk business with no initial investment. It requires less effort than dropshipping and can be a good way to supplement your income.<br><br> In conclusion, dropshipping and affiliate marketing are both viable options for starting an online business. Each has its own advantages and disadvantages, and it's up to you to decide which one is right for you. It's important to do your research and carefully consider your options before making a decision.</h3>
+	</div>
+    <div class="googlead">
+
+    </div>
+	<script>
+		function openMenu() {
+			var menu = document.getElementById("menu");
+			if (menu.style.left === "-300px") {
+				menu.style.left = "0";
+			} else {
+				menu.style.left = "-300px";
+			}
+		}
+		function showHome() {
+			var content = document.getElementById("content");
+			content.innerHTML = "<h1>Dropshipping vs Affiliate Marketing</h1><br><br><h3>Dropshipping and affiliate marketing are two popular online business models that have gained a lot of attention in recent years. While both are based on the concept of selling products online, they differ in many ways. In this article, we will discuss the differences between dropshipping and affiliate marketing, their pros and cons, and which one is right for you.<br><br> Dropshipping is a retail fulfillment method where a store doesn't keep the products it sells in stock. Instead, when a store sells a product, it purchases the item from a third party and has it shipped directly to the customer. Dropshipping is an appealing option for entrepreneurs because it doesn't require the initial investment of buying inventory or the costs of warehousing and shipping. In short, the dropshipper acts as a middleman between the customer and the supplier. <br><br> On the other hand, affiliate marketing is a process in which an affiliate earns a commission for marketing another company's products. The affiliate searches for a product they like, then promotes that product and earns a piece of the profit from each sale they make. Unlike dropshipping, the affiliate does not handle the product directly, nor do they own the product. They simply promote the product through an affiliate link.<br><br> One of the main advantages of dropshipping is that it requires a relatively low initial investment. Since there is no inventory to purchase upfront, the entrepreneur can focus on marketing the products and building the business. This makes it an appealing option for those who want to start a business but don't have a lot of capital to invest.<br><br> Another advantage of dropshipping is the flexibility it provides. Since the entrepreneur doesn't own the inventory, they can easily change the products they sell without having to worry about clearing out existing inventory. This allows for greater agility and responsiveness to market trends.<br><br> However, dropshipping also has some drawbacks. One of the biggest challenges is finding reliable suppliers and managing the logistics of shipping products to customers. In addition, since the entrepreneur is not in control of the shipping process, there can be delays and issues that arise that are beyond their control.<br><br> Affiliate marketing, on the other hand, has a low barrier to entry and requires no initial investment. This makes it an appealing option for those who are just starting out or those who want to supplement their income.<br><br> Another advantage of affiliate marketing is the flexibility it provides. Affiliates can promote a wide range of products, from physical goods to digital products and services. This allows for greater diversity in the products that can be promoted.<br><br> However, there are also some disadvantages to affiliate marketing. One of the biggest challenges is the lack of control over the product being promoted. Since the affiliate does not own the product, they have no control over the quality, price, or availability of the product. In addition, the commission rates for affiliate marketing can be relatively low, which can limit the potential for earning significant income.<br><br> So, which one is better? The answer depends on your personal preferences, skills, and business goals. Dropshipping can be a good option if you are looking for a flexible business with low overhead costs. It allows for greater control over the products being sold and can be more profitable in the long run.<br><br> Affiliate marketing, on the other hand, can be a good option if you are looking for a low-risk business with no initial investment. It requires less effort than dropshipping and can be a good way to supplement your income.<br><br> In conclusion, dropshipping and affiliate marketing are both viable options for starting an online business. Each has its own advantages and disadvantages, and it's up to you to decide which one is right for you. It's important to do your research and carefully consider your options before making a decision.</h3>";
+			document.getElementById("menu").style.left = "-300px";
+		}
+		function showAbout() {
+			var content = document.getElementById("content");
+			content.innerHTML = "<p>Details about us</p>";
+			document.getElementById("menu").style.left = "-300px";
+		}
+		function showContact() {
+			var content = document.getElementById("content");
+			content.innerHTML = "<p>Contact us here</p>";
+			document.getElementById("menu").style.left = "-300px";
+		}
+	</script>
+</body>
+</html>
